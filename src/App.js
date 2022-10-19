@@ -1,14 +1,16 @@
 import logo from './logo.svg';
-import './App.css';
-import Index from './Com[onents/index';
+import Counter from "./Component/Counter"
+let App = () => {
 
-function App() {
-  return (
-    <div>
-      <Index/>
-      <h1>Heelo</h1>
-        </div>
-  );
+    return <div>
+        <h1>HEllo React</h1>
+        <h1>App Comp</h1>
+        <hr />
+        <Counter/>
+        <hr/>
+      
+        
+    </div>
+
 }
-
-export default App;
+export default App
