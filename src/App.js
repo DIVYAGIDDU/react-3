@@ -1,8 +1,10 @@
 import React from "react";
-import Products from "./Components/Products";
+import Employee from "./Employee/Employee";
+import SearchBar from "./Components/SearchBar";
 const App = ()=>{
   return (<div>
-  <Products/>
+  <Employee/>
+  <SearchBar placeholder="Enter abook name..."/>
   </div>
   );
 }
