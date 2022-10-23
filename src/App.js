@@ -1,18 +1,15 @@
 import React from "react";
-import {BrowserRouter as Router,Routes, Route} from "react-router-dom";
-import Navbar from "./Components/Navbar"
-import ContactApp from "./ContactApp/ContactApp";
-class App extends React.Component{
-render(){
-  return (<div>
-  <Router>
-  <Navbar/>
-  <Routes>
-  <Route path="contact" element={<ContactApp/>}/>
-  </Routes>
-  </Router>
-  </div>
+import Message from "./Message";
+import Counter from "./Counter";
+import Login from "./Login";
+function App(){
+  return(
+    <div>
+    <Message/>
+    <hr/>
+    <Counter/>
+    <Login/>
+    </div>
   );
-}
 }
 export default App
