@@ -1,14 +1,9 @@
 import React from "react";
-import Message from "./Message";
-import Counter from "./Counter";
-import Login from "./Login";
+import Digitalclock from "./Digitalclock";
 function App(){
   return(
     <div>
-    <Message/>
-    <hr/>
-    <Counter/>
-    <Login/>
+   <Digitalclock/>
     </div>
   );
 }
