@@ -1,11 +1,18 @@
 import React from "react";
-import Employee from "./Employee/Employee";
-import SearchBar from "./Components/SearchBar";
-const App = ()=>{
+import {BrowserRouter as Router,Routes, Route} from "react-router-dom";
+import Navbar from "./Components/Navbar"
+import ContactApp from "./ContactApp/ContactApp";
+class App extends React.Component{
+render(){
   return (<div>
-  <Employee/>
-  <SearchBar placeholder="Enter abook name..."/>
+  <Router>
+  <Navbar/>
+  <Routes>
+  <Route path="contact" element={<ContactApp/>}/>
+  </Routes>
+  </Router>
   </div>
   );
+}
 }
 export default App
