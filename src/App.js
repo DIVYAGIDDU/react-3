@@ -1,10 +1,12 @@
 import React from "react";
-import Digitalclock from "./Digitalclock";
-function App(){
-  return(
-    <div>
-   <Digitalclock/>
-    </div>
-  );
+import Digit from "./DigitalClock/Digit";
+class App extends React.Component{
+  render(){
+    return( <div>
+      <Digit/>
+      </div>
+
+    )
+  }
 }
 export default App
