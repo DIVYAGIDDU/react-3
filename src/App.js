@@ -1,9 +1,12 @@
 import React from "react";
-import Digit from "./DigitalClock/Digit";
+import Navbar from "./Navbar";
+import FormHand from "./FormHand";
 class App extends React.Component{
   render(){
     return( <div>
-      <Digit/>
+    
+      <Navbar/>
+      <FormHand/>
       </div>
 
     )

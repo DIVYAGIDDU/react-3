@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactList from './ContactDetails';
+import ContactList from './ContactList';
 import ContactDetails from "./ContactDetails";
 import Axios from 'axios'
 class ContactApp extends React.Component{
@@ -7,7 +7,7 @@ class ContactApp extends React.Component{
         super(props);
         this.state={Contact:[],sel_Contact:{}}
     }
-    userSelected_Contact_Metho=(Contact)=>{
+    userSelected_Contact_Method=(Contact)=>{
       this.setState({sel_Contact:Contact})
       console.log(Contact.name.first,"line 12")
     }
