@@ -1,12 +1,10 @@
 import React from "react";
-import Navbar from "./Navbar";
-import FormHand from "./FormHand";
+import Registration from "./Component/Registration";
 class App extends React.Component{
   render(){
     return( <div>
     
-      <Navbar/>
-      <FormHand/>
+    <Registration/>
       </div>
 
     )
